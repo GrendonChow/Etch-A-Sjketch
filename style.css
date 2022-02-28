@@ -1,6 +1,16 @@
-.container{
+.controlContainer{
+    display:flex;
+}
+
+.grid{
     width: 528px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
+    height: 528px;
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    grid-template-rows: repeat(16, auto);
+    border: 1px solid black;
+}
+
+.square{
+    border: 1px sold black;
 }
