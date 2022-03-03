@@ -3,7 +3,7 @@ let mDown = 0;
 const grid = document.querySelector('.grid');
 const slider = document.querySelector('.slider');
 
-//Used to check if mosue is currently beign help down or not.
+//Used to check if mosue is currently being help down or not.
 document.body.onmousedown = function() {
     mDown++;
 }
