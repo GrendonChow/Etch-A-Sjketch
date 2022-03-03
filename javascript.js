@@ -46,7 +46,7 @@ function clearBoard()
     createGrid(size);
 }
 
-//Tpggles the grid.
+//Toggles the grid.
 function toggleGrid()
 {
     const sqr = document.querySelectorAll('.square');
