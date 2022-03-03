@@ -1,6 +1,7 @@
 let mDown = 0;
 
 const grid = document.querySelector('.grid');
+const slider = document.querySelector('.slider');
 
 //Used to check if mosue is currently beign help down or not.
 document.body.onmousedown = function() {
@@ -9,7 +10,7 @@ document.body.onmousedown = function() {
 document.body.onmouseup = function() {
     mDown--;
 }
-createGrid()
+createGrid();
 
 function createGrid(size = 16)
 {
@@ -17,7 +18,6 @@ function createGrid(size = 16)
     {
         grid.appendChild(createSqrs());
     }
-
 }
 
 function createSqrs()
@@ -37,11 +37,6 @@ function createSqrs()
 //Clears the board
 function clearBoard()
 {
-    //const squares = document.querySelectorAll('.square');
- //   squares.forEach(sqr =>{
-    //    sqr.style.background = 'white';
-  //  });
-
     size = parseInt(prompt('How big should it be? (max 100 square side)'));
     console.log(grid.classList)
     const squares = document.querySelectorAll('.square');
@@ -49,4 +44,20 @@ function clearBoard()
     grid.style.gridTemplateColumns = `repeat(${size}, auto)`;
     grid.style.gridTemplateRows = `repeat(${size}, auto)`;
     createGrid(size);
+}
+
+//Tpggles the grid.
+function toggleGrid()
+{
+    const sqr = document.querySelectorAll('.square');
+    sqr.forEach(s => {
+        if(s.style.border == "1px solid black")
+        {
+            s.style.border="1px solid transparent";
+        }
+        else
+        {
+            s.style.border="1px solid black";
+        }
+    });
 }

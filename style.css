@@ -1,5 +1,7 @@
 .controlContainer{
     display:flex;
+    gap:5px;
+    margin-bottom: 10px;
 }
 
 .grid{
@@ -9,8 +11,4 @@
     grid-template-columns: repeat(16, auto);
     grid-template-rows: repeat(16, auto);
     border: 1px solid black;
-}
-
-.square{
-    border: 1px sold black;
 }
