@@ -38,7 +38,6 @@ function createSqrs()
 function clearBoard()
 {
     size = parseInt(prompt('How big should it be? (max 100 square side)'));
-    console.log(grid.classList)
     const squares = document.querySelectorAll('.square');
     squares.forEach(c => c.remove());
     grid.style.gridTemplateColumns = `repeat(${size}, auto)`;
